@@ -1,33 +1,80 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "=//W3C//DTD/XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml10/DTD/xhtml110.dtd">
 <html>
-<title>PRERAN</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('pexels-irina-iriser-1379636.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
+<head>
+<script type="text/javascript">
+function  fibonacci()
+{
+var n=prompt("Enter a number");
+if(n==n.match(/[0-9]*/))
+{
+var a=0;
+var b=1;
+if(n==0)
+document.write("No such series");
+document.write("<b>FIBONACCI SERIES:<br/></b>");
+if(n==1)
+document.write(a+"<BT/>");
+else
+{
+document.write(a+"<br/>");
+document.write(b+"<br/>");
+for(var i=2;i<n;i++)
+{
+var fib=a+b;
+a=b;
+b=fib;
+document.write(fib+"<br/>");
+   }
 }
-</style>
+}
+else
+{
+alert("Invalid Input");
+}
+}
+function factorial()
+{ 
+var n=prompt("Enter a number");
+if(n==n.match(/[0-9]*/))
+{
+var fact=1;
+if(n==0)
+{
+document.write("Factorial is 1");
+}
+else
+{
+for(var i=1;i<=n;i++)
+{
+fact=fact*i;
+}
+document.write("Factorial of "+n+"is"+fact);
+}
+}
+else
+{
+alert("Invalid Input");
+}
+}
+</script> 
+</head>
 <body>
-
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    Logo
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">PRERAN</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">.</p>
-  </div>
- 
-</div>
-
+<h3>
+<center>WEBPAGE TO OUTPUT N FIBONACCI OR FACTORIAL OF N NUMBERS</center>
+</h3>
+<h2>
+<center>Select the following Radio button to perform operation</center>
+</h2>
+<table border="6" align="center">
+<tr>
+<td>A.FIBONACCI</td>
+<td><input type="radio" name="a" onclick="fibonacci()"/></td>
+</tr>
+<tr>
+<td>B.FACTORIAL</td>
+<td><input type="radio" name="a" onclick="factorial()"/></td>
+</tr>
+</table>
 </body>
 </html>
