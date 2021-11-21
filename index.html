@@ -2,28 +2,38 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml11/DTD/xhtml1-strict.dtd">
 <html xmlns = "http://www.w3.org/1999/xhtml">
-<head>
-<title>Page Title</title>
-</head>
+<head> <title> CompleteForm</title> </head>
 <body>
-<h1>Demo of Basic table structure</h1>
-<table border="border">
-<caption>Marks obtained</caption>
-<tr align="center">
-<th>
-<th>Sub1</th>
-<th>Sub2</th>
-<th>Sub3</th>
-</tr>
-<tr>
-<th>Student 1 </th>
-<td align="left">100</td>
-<td align="right">90</td>
-<td align="center">80</td>
-</tr>
-<tr>
-<th><br />Student 2<br /> <br /> </th>
-<td>90</td>
-<td valign="top">100</td>
-<td valign="bottom">80</td>
-</tr></table></body></html>
+<h1>Registration Form</h1>
+<form action=" ">
+<p> <label>Enter your email id: <input type = "text" name =
+"myname" size = "24" maxlength = "25" /> </label> </p>
+<p> <label>Enter the password: <input type = "password" name =
+"mypass" size = "20" maxlength = "20" /> </label> </p>
+<p><label>Select your Country: <select name="Country" size="2"
+multiple="multiple">
+<option>India</option>
+<option>England</option>
+<option>New Zealand</option>
+</select></label> </p>
+<p>Sex</p>
+<p>
+<label><input type="radio" name="act" value="one"
+checked="checked"/>Male</label>
+<label><input type="radio" name="act" value="two"/>Female</label>
+</p>
+<p>Which of the following Accounts do you have?</p>
+<p> <label><input type="checkbox" name="act" value="one"
+checked="checked"/>Gmail</label>
+<label><input type="checkbox" name="act"
+value="two"/>Facebook</label>
+<label><input type="checkbox" name="act"
+value="three"/>Twitter</label>
+<label><input type="checkbox" name="act"
+value="four"/>Google+</label> </p>
+<p> Any Suggestions?</p>
+<p> <textarea name="feedback" rows="5" cols="100">(BE BRIEF)
+</textarea> </p>
+<p>Click on Submit if you want to register</p>
+<p> <input type="SUBMIT" value="SUBMIT"/>
+<input type="RESET" value="RESET"/> </p> </form> </body> </html>
