@@ -1,14 +1,29 @@
-b<!DOCTYPE html> <html>
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml1-strict.dtd">
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+<title>Page Title</title>
+</head>
 <body>
-<p>Image to use:</p>
-<img id="sc" src="pexels-irina-iriser-1379636.jpg" alt="The Scream" width="100" height="100">
-<p>Canvas to fill:</p>
-<canvas id="myCanvas" width="250" height="300" style="border:1px solid #d3d3d3;"> Your browser does not support the HTML5 canvas tag.</canvas>
-<p><button onclick="myCanvas()">Try it</button></p>
-<script>
-function myCanvas() {
- 
-var c = document.getElementById("myCanvas"); var ctx = c.getContext("2d");
-var img = document.getElementById("sc"); ctx.drawImage(img,10,10);
-} </script>
-</body> </html>
+<h1>Demo of Basic table structure</h1>
+<table border="border">
+<caption>Marks obtained</caption>
+<tr align="center">
+<th />
+<th>Sub1</th>
+<th>Sub2</th>
+<th>Sub3</th>
+</tr>
+<tr>
+<th>Student 1 </th>
+<td align="left">100</td>
+<td align="right">90</td>
+<td align="center">80</td>
+</tr>
+<tr>
+<th><br />Student 2<br /> <br /> </th>
+<td>90</td>
+<td valign="top">100</td>
+<td valign="bottom">80</td>
+</tr></table></body></html>
